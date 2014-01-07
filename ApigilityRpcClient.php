@@ -1,7 +1,5 @@
 <?php
 
-class ApigilityRpcFault extends Exception {}
-
 class ApigilityRpcClient {
     protected $uri;
 
