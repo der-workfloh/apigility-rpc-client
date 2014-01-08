@@ -54,6 +54,8 @@ class ApigilityRpcClient {
             case 200:
                 // everything's ok
                 break;
+            case 0:
+                throw new RuntimeException('[Runtime] Seems no RPC-Server running under '.$this->uri);
             default:
                 throw new RuntimeException('[Runtime] Abort with Http-Code '.$iHttpCode);
         }
