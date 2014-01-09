@@ -17,6 +17,8 @@ assert_options(ASSERT_CALLBACK, 'assertHandler');
 
 /*
  * RPC
+ * The API sums two positiv integer values, which are greater then 0 and returns
+ * the sum.
  */
 require_once './ApigilityRpcClient.php';
 
